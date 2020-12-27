@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+
+.container{
+    width: 1300px;
+    margin: 0 auto;
+    font-family: 'Sniglet', cursive;
+}
+
+/** HEADER **/
+
+.flex-base{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    opacity: 0.99;
+}
+
+.nomResto{
+    font-size: 40px;
+    font-family: 'Pacifico', cursive;
+}
+
+.menu{
+    list-style-type: none;
+}
+
+.menu li a{
+    padding: 10px 15px;
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+}
+
+.menu li a:hover{
+    border-bottom: 3px solid #c0392b;
+    cursor: pointer;
+}
+
+/** BANNER **/
+
+.banner{
+    background-image: url('/res/background.jpg');
+    max-width: 100%;
+    height: 400px;
+    background-size: cover;
+    margin-bottom: 70px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/** PRODUCTS **/
+
+.products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.currentProduct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+    border: 1px solid #95a5a6;
+    border-radius: 3px;
+}
+
+.currentProduct img{
+    display: block;
+    width: 50%;
+    height: auto;
+}
+
+.prixDispo{
+    width: 210px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.disponible{
+    color: #4cd137;
+}
+
+.epuise{
+    color: #e84118;
+}
+
+.voirPlus{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #16a085;
+    border: 1px solid #16a085;
+    width: 65%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ajouterPanier{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #16a085;
+    border: 1px solid #16a085;
+    width: 65%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/** FOOTER **/
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    border: 1px solid #000000;
+}
+
+.copyright{
+    padding: 15px;
+}
+
+/** CONTACT PAGE **/
+
+.contactForm{
+    margin: 20px 0px 20px 0px;
+}
+
+.firstName, .lastName, .emailAddress, .emailBody{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+input[type="text"], input[type="email"], .Message{
+    width: 80%;
+    font-family: 'Sniglet', cursive;
+}
+
+input[type="submit"]{
+    width: 100%;
+    padding: 10px;
+    font-family: 'Sniglet', cursive;
+}
+
+
+/** CART PAGE **/
+
+.cartSummary table{
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.cartSummary table td{
+    width : 25%;
+    text-align: center;
+    border: 1px dashed #000000;
+    padding: 20px 0px;
+}
+
+.minus{
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.add{
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+/** PRODUCT DATA PAGE **/
+
+table{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+table td{
+    width: 50%;
+    border-top: 1px dashed #000000;
+    padding: 20px;
+}
+
+table td:first-child{
+    border-right: 1px dashed #000000;
+}
+
+.dataDisplay{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 50px;
+}
+
+.dataDisplay p{
+    line-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
